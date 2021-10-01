@@ -34,7 +34,7 @@ a:hover {}
 .top {
   width: 100%;
   position: relative;
-  font-family: FreeSans;
+  font-family: FreeSans, Arial, sans-serif;
   line-height: 1.2em;
   hyphens: manual;
   border-bottom: 1px solid black;
@@ -198,11 +198,15 @@ iframe {
 
 .menu a {
   display: block;
-  text-decoration: underline solid #4444F2 3px;
+  text-decoration: underline solid #4444F2 3px !important;
+  -webkit-text-decoration-line: underline !important;
+  -webkit-text-decoration-color: #4444F2 !important;
+  -webkit-text-decoration-style: solid !important;
+  -webkit-text-decoration-thickness: 3px !important;
 }
 
 .menu a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .content-text {
@@ -220,10 +224,14 @@ iframe {
 
 .content-text a {
   text-decoration: underline solid #4444F2 3px;
+  -webkit-text-decoration-line: underline !important;
+  -webkit-text-decoration-color: #4444F2 !important;
+  -webkit-text-decoration-style: solid !important;
+  -webkit-text-decoration-thickness: 3px !important;
 }
 
 .content-text a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .event-date {
@@ -287,7 +295,7 @@ iframe {
 .description {
   position: fixed;
   /* display:none; */
-  width:100%;
+  width: 100%;
   bottom: 10px;
   z-index: 999;
   color: #4444F2;
@@ -301,14 +309,11 @@ iframe {
 }
 
 /* id-description */
-
 #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10 {
-  display:none;
-
+  display: none;
 }
 
-
-.s-photo img{
+.s-photo img {
   display: inline-block;
   vertical-align: middle;
   transform: translateZ(0);
@@ -333,8 +338,7 @@ iframe {
 }
 
 /* issue-style */
-
-.issue-box{
+.issue-box {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -351,7 +355,6 @@ iframe {
 
 /* phone */
 @media only screen and (max-width: 600px) {
-
   .flex-box, {
     position: relative;
     display: flex;
@@ -382,5 +385,4 @@ iframe {
     /* margin:0; */
     /* width: 100%; */
   }
-
 }
