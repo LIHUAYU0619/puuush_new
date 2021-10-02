@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Everyday Life</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+
+  <link href="css/hover-min.css" rel="stylesheet" media="all">
+</head>
+
+<style>
+
+/* img */
+.mySlides1, .mySlides2, .mySlides3 {display: none}
+
+.slideshow-container img
+ {
+  border: solid #4444F2 1px;
+}
+
+.mySlides1 img, .mySlides2 img, .mySlides3 img {
+  border: solid #4444F2 1px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  /*  */
+  font-style: normal;
+  /* font-size: 1.7em; */
+  margin-top:10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: -3%;
+  width: 50%;
+  height: 100%;
+  transition: 0.2s ease;
+  /* border-radius: 0 3px 3px 0; */
+  user-select: none;
+  padding:20px;
+  opacity:0;
+  font-size: 2em;
+}
+
+.prev {
+  display: flex;
+  align-items: center;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  opacity:1;
+}
+
+/* caption */
+.tooltip {
+
+  text-decoration: none;
+  /* display: inline; */
+  position: relative;
+}
+
+.tooltip img {
+  border: solid red 1px;
+  border-radius: 50px;
+}
+
+.tooltip:hover {
+  z-index: 999;
+}
+
+.tooltip span {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  display: none;
+  color:rgb(246, 58, 58);
+  max-width: 300px;
+  z-index: 999;
+}
+
+.tooltip:hover span {
+  display: block;
+  position: fixed;
+  overflow: hidden;
+}
+
+
+</style>
+
+<body>
+  <div class="whole">
+
+    <!-- top -->
+    <div class="top">
+      <a href="../index.html">Back</a>
+    </div>
+
+    <div class="content-box">
+      <div class="issue-box">
+        <p class="question">
+          Can you tell us the neighborhood you live in? Where are your favorite places?
+        </p>
+
+        <p class="answer">
+          <center style="color:black">*Lauren*</center>
+          <br>
+          I live in Altadena, California, in San Gabriel Valley at the foothills of the Angeles National Forest. Some walking distance favorite places are Christmas Tree Lane with its annual tree lighting ceremony, and Roma Market with its famous
+          sandwich. Driving distance favorites are too many to list: 99 Ranch; Atlantic Times Square; Camellia Square; the classics Din Tai Fung, Hai Di Lao, and Meizhou Dongpo; Young Dong Tofu; Kee Wah Bakery; and my top night out combination of
+          Mian
+          and Blackball. Just to name a few.
+        </p>
+
+        <div class="slideshow-container slideshow-1">
+
+          <div class="mySlides1">
+
+            <img src="img/01/1_1.JPG" style="width:100%">
+            <span>
+              <center>1. Catalina Avenue </center>
+            </span>
+
+          </div>
+
+          <div class="mySlides1">
+            <img src="img/01/1_2.JPG" style="width:100%">
+            <span>
+              <center>2. Elizabeth Street </center>
+            </span>
+          </div>
+
+          <div class="mySlides1">
+            <img src="img/01/1_3.JPG" style="width:100%">
+            <span>
+              <center>3. Roma Market </center>
+            </span>
+          </div>
+
+          <div class="mySlides1">
+            <img src="img/01/1_4.JPG" style="width:100%">
+            <span>
+              <center>4. Prospect Plaza, San Gabriel </center>
+            </span>
+          </div>
+
+          <div class="mySlides1">
+            <img src="img/01/1_5.JPG" style="width:100%">
+            <span>
+              <center>5. Oranges on Catalina </center>
+            </span>
+          </div>
+
+          <div class="prev" onclick="plusSlides(-1, 0)">
+            < </div> <div class="next" onclick="plusSlides(1, 0)">
+              >
+          </div>
+
+        </div>
+
+        <p class="question">
+          Is there any fun art/cultural community around you? Do you often join their activities?
+        </p>
+
+        <p class="answer">
+          <center style="color:black">*Lauren*</center>
+          <br>
+          I’m a graphic designer at the Hammer Museum in Los Angeles, so it naturally forms a valuable part of my community here. The UCLA Film and Television Archive shows great, often hard to find films in the museum’s theater: biennials of new
+          Chinese and Taiwanese cinema, and a screening in 2017 of Barbara Loden’s <i>Wanda</i> (1970) that became the basis of my research for a Kima book on the subject.
+          <br><br>
+
+          My friends are also all incredibly talented people, and I cherish the collaborative work that evolves out of our conversations and time spent in each other’s company. They also have a gift for bringing people together through spaces like
+          Young Art and Mrs Wong’s, and I always look forward to seeing what they do next.
+        </p>
+
+        <div class="slideshow-container slideshow-2">
+
+          <div class="mySlides2">
+
+            <img src="img/01/2_1.png" style="width:100%">
+            <span>
+              <center>6. <i>Two Texts on Wanda</i>, 2017 </center>
+            </span>
+
+          </div>
+
+          <div class="mySlides2">
+            <img src="img/01/2_2.png" style="width:100%">
+            <span>
+              <center>7. Two Texts on Wanda foldout poster dust jacket </center>
+            </span>
+          </div>
+
+          <div class="prev" onclick="plusSlides(-1, 1)">
+            < </div> <div class="next" onclick="plusSlides(1, 1)">
+              >
+          </div>
+
+        </div>
+
+        <p class="question">
+          We are excited about the Kima Book you collaborated with Caodi! Could you tell us any story behind it?
+        </p>
+
+        <p class="answer">
+          <center style="color:black">*Lauren*</center>
+          <br>
+          We had been talking for a while, and our conversations always seemed to drift to the topic of food. It was clearly something he has a passion and skill for, so I asked what he thought about the idea of doing a recipe book. It’s a collection
+  				of simple, everyday dishes, made and photographed by Caodi in his home where his grandmother used to live. Through this collaboration we learned about each other’s families and the role of cooking within them.
+        </p>
+
+        <div class="slideshow-container slideshow-3">
+
+  				<div class="mySlides3">
+
+  					<img src="img/01/3_1.jpg" style="width:100%">
+  					<span>
+  						<center>8. Caodi cooking at home </center>
+  					</span>
+
+  				</div>
+
+          <div class="mySlides3">
+  					<img src="img/01/3_2.png" style="width:100%">
+  					<span>
+  						<center>9. <i>Simple Chinese Home Cooking</i>, 2020 </center>
+  					</span>
+  				</div>
+
+  				<div class="mySlides3">
+  					<img src="img/01/3_3.png" style="width:100%">
+  					<span>
+  						<center>10. <i>Simple Chinese Home Cooking</i>, 2020 </center>
+  					</span>
+  				</div>
+
+  				<div class="mySlides3">
+  					<img src="img/01/3_4.png" style="width:100%">
+  					<span>
+  						<center>11. <i>Simple Chinese Home Cooking</i>, 2020 </center>
+  					</span>
+  				</div>
+
+  				<div class="prev" onclick="plusSlides(-1, 2)">
+  					< </div> <div class="next" onclick="plusSlides(1, 2)">
+  						>
+  				</div>
+
+  			</div>
+
+        <p class="question">
+          Which Chinese food do you like the best?
+        </p>
+
+        <p class="answer">
+          <center style="color:black">*Lauren*</center>
+          <br>
+          Growing up my mother cooked a moqua squash dish with ground pork and toasted black sesame seeds that I loved. Any combination of soup and noodles; mi xian when arriving in Kunming in 2016 and guo qiao mi xian when leaving. Also dou hua.
+        </p>
+
+        <div class="slideshow-container slideshow-4">
+
+          <div class="mySlides4">
+
+            <img src="img/01/4_1.JPG" style="width:100%">
+            <span>
+              <center>12. Mi xian in Kunming </center>
+            </span>
+
+          </div>
+
+          <div class="mySlides4">
+            <img src="img/01/4_2.JPG" style="width:100%">
+            <span>
+              <center>13. Dou hua in Taipei</center>
+            </span>
+          </div>
+
+
+          <div class="prev" onclick="plusSlides(-1, 3)">
+            < </div> <div class="next" onclick="plusSlides(1, 3)">
+              >
+          </div>
+
+        </div>
+
+        <p class="question">
+          What’s the most relaxing and chill thing for you to do in everyday life?
+        </p>
+
+        <p class="answer">
+          <center style="color:black">*Lauren*</center>
+          <br>
+          Shopping—not necessarily buying, just looking and sorting. I get it from my mother who gets it from her mother.
+        </p>
+
+        <div class="slideshow-container slideshow-4">
+
+  				<div class="mySlides5">
+  					<img src="img/01/5_1.jpg" style="width:100%">
+  					<span>
+  						<center>14. Guama in New York, 1940s </center>
+  					</span>
+  				</div>
+
+  			</div>
+
+        <p class="question">
+          We are also curious about your daily working mode. How you keep balance between commissioned work, personal project, and hobby?
+        </p>
+
+        <p class="answer">
+          <center style="color:black">*Lauren*</center>
+          <br>
+          I don’t have a planned working mode, nor do I keep any kind of schedule. My portioning of time fluctuates between commissions and publishing, and I release Kima editions when they’re ready. Sometimes the process is a few months, other times
+          over a year. My main focus is always on forming ideas and relationships, and never on setting deadlines. I have a small office room in my house that functions as design studio, print workshop for silkscreening and bookbinding, and photo
+          studio for documentation. I prefer the flexibility of working from home, and have never kept a more formal studio space. I’m not much of a hobby person, but I do take a ballet class. It’s something I’ve studied since childhood, and is
+          essentially the only form of exercise I enjoy.
+        </p>
+
+        <div class="slideshow-container">
+
+  				<div class="mySlides6">
+  					<img src="img/01/6_1.JPG" style="width:100%">
+  					<span>
+  						<center>15. Studio </center>
+  					</span>
+  				</div>
+
+  				<div class="mySlides6">
+  					<img src="img/01/6_2.JPG" style="width:100%">
+  					<span>
+  						<center>16. Studio </center>
+  					</span>
+  				</div>
+
+  				<div class="mySlides6">
+  					<img src="img/01/6_3.JPG" style="width:100%">
+  					<span>
+  						<center>17. Studio </center>
+  					</span>
+  				</div>
+
+  				<div class="mySlides6">
+  					<img src="img/01/6_4.JPG" style="width:100%">
+  					<span>
+  						<center>18. Sun room </center>
+  					</span>
+  				</div>
+
+  				<div class="prev" onclick="plusSlides(-1, 5)">
+  					< </div> <div class="next" onclick="plusSlides(1, 5)">
+  						>
+  				</div>
+
+  			</div>
+
+        <p class="question">
+          Is there any on-going project that you would like to share with us?
+        </p>
+
+        <p class="answer">
+          <center style="color:black">*Lauren*</center>
+          <br>
+          I started a new publishing project this year called <a href="https://www.cherrybooks.la/" target="_blank" style="font-weight:400;">Cherry</a> with filmmaker and graphic designer Nathan Rickard. The imprint is a series of photographic diaries
+  				by artists, friends, and family that documents individual observations on daily life. They aren’t necessarily photographers by profession, just people around us who we noticed at one point or other take great photos that we appreciate and
+  				want to share.
+        </p>
+
+        <div class="slideshow-container">
+
+  				<div class="mySlides7">
+  					<img src="img/01/7_1.JPG" style="width:100%">
+  					<span>
+  						<center>19. Cherry 1 and 2 </center>
+  					</span>
+  				</div>
+
+  			</div>
+
+        <p class="question">
+        Could you share with us an object, a book or film that you especially like recently?
+        </p>
+
+        <p class="answer">
+          <center style="color:black">*Lauren*</center>
+          <br>
+          Always rewatching Apichatpong Weerasethakul’s <i>Tropical Malady</i> (2014), it leaves an impression on me every time. I’ve been reading the collected writing of Esther McCoy, keen storyteller, architectural historian, and sometime draftsman who wrote
+  				extensively on southern California architecture during the birth and rise of midcentury modernism. I was also introduced this summer by friend and fellow designer, Connie Chang, to the gratification of estate sale auctions as a way of
+  				researching and collecting Chinese artifacts, most recently a set of cloisonné enamelware bowls.
+        </p>
+
+        <div class="slideshow-container">
+
+          <div class="mySlides8">
+            <img src="img/01/8_1.jpg" style="width:100%">
+            <span>
+              <center>20. Cloisonné enamelware </center>
+            </span>
+          </div>
+        </div>
+
+        <p class="question">
+        Last question, what is your favorite Chinese song?
+        </p>
+
+        <p class="answer">
+          <center style="color:black">*Lauren*</center>
+          <br>
+          I’d be remiss—though it’s a little predictable—if I didn’t mention Wakin Chau’s song <i>Friends</i>. It was one I learned in middle school Chinese class, timidly singing from my desk thinking it was the most beautiful song. As far as current
+  				favorites, Chyi Yu singing <i>Olive Tree</i>, Yoona’s cover of <i>A Little Happiness</i>, <i>紫丁香, 采红菱</i>, Teresa Teng singing <i>Forget Him</i>, Faye Wong and Na Ying singing <i>Years</i>.
+        </p>
+
+        <br>
+        <hr>
+
+        <span class="bio" style="color:black">
+
+  				<a href="https://laurengraycar.com/" target="_blank" style="color:red">Lauren Graycar</a> is a graphic designer and publisher. She has collaborated with a range of creative concerns in Los Angeles—where she lives and works—on projects across traditional and
+  				new media. Since 2013 she has run the publishing imprint <a href="https://kima.us/" target="_blank" style="color:red">Kima</a>.
+
+  			</span>
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  var tooltips = document.querySelectorAll('.tooltip span');
+
+  window.onmousemove = function(e) {
+    var x = (e.clientX + 20) + 'px',
+      y = (e.clientY + 20) + 'px';
+    for (var i = 0; i < tooltips.length; i++) {
+      tooltips[i].style.top = y;
+      tooltips[i].style.left = x;
+    }
+  };
+</script>
+
+
+<!-- slides -->
+<script>
+  var slideIndex = [1, 1, 1, 1, 1, 1, 1];
+  var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7"]
+  showSlides(1, 0);
+  showSlides(1, 1);
+  showSlides(1, 2);
+  showSlides(1, 3);
+  showSlides(1, 4);
+  showSlides(1, 5);
+  showSlides(1, 6);
+
+  function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+  }
+
+  function showSlides(n, no) {
+    var i;
+    var x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {
+      slideIndex[no] = 1
+    }
+    if (n < 1) {
+      slideIndex[no] = x.length
+    }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex[no] - 1].style.display = "block";
+  }
+</script>

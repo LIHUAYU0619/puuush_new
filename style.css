@@ -11,11 +11,13 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
 }
 
-a:hover {}
+a:hover {
+  text-decoration: none;
+}
 
 @font-face {
   font-family: FreeSans;
@@ -100,6 +102,14 @@ iframe {
   flex-wrap: wrap;
   /* width:25%; */
   /* background-color: pink; */
+}
+
+.item a{
+  text-decoration: none;
+}
+
+.item a:hover{
+  text-decoration: underline;
 }
 
 .item span {
@@ -340,18 +350,32 @@ iframe {
 /* issue-style */
 .issue-box {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  margin: 1.5% 1.2% 0 1.2%;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+  max-width: 700px;
+  padding: 20px;
   /* margin-top: 2%; */
   /* background-color: blue; */
   /* height:2000px; */
   font-family: 'Xanh Mono', monospace;
-  font-size: 20em;
+  /* font-size: 20em; */
   align-content: flex-start;
+  font-size:1.4em;
+  color:#4444F2;
+  /*  */
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
+
+.bio{
+  font-size: 1em;
+  /* line-height: 50%; */
+}
+
+
 
 /* phone */
 @media only screen and (max-width: 600px) {
