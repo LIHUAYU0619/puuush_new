@@ -188,6 +188,23 @@ iframe {
   /* margin-left:1.2%; */
 }
 
+.title-img{
+
+  transition: .5s ease-in-out;
+  /* background-color: red; */
+}
+
+.title-img:hover{
+  /* width:300%; */
+  /* height:100%; */
+  transform-origin: left;
+  transform: scale(2.4, 1);
+  /* -webkit-transform: scale(1) rotate(0.01deg); */
+        /* transform: scale(0,2) scaleX(1.2); */
+}
+
+
+
 .menu {
   position: fixed;
   display: block;
@@ -391,8 +408,11 @@ iframe {
     /* height: 200px; */
     font-size:0;
     width:100%;
-    padding:15px 20px 0 10px;
+    padding:7px 20px 0 0px;
+  }
 
+  .title-img:hover{
+    transform: none;
   }
 
   .flex-box{
